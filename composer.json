@@ -1,0 +1,39 @@
+{
+    "name": "kodcube/invoker",
+    "description": "Build and Invoke Classes",
+    "keywords": ["php","invoker", "dependency-injection", "dependency", "injection", "callable", "invoke"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Steven Miles",
+            "email": "steve@kodcube.com",
+            "homepage": "https://www.kodcube.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php":">=7.0.0",
+        "kodcube/helpers":"^0.1",
+        "container-interop/container-interop": "~1.1"
+    },
+    "optional":{
+        "kodecube/message-bus":"dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+             "KodCube\\Invoker\\":"./KodCube/Invoker"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KodCube\\Invoker\\Test\\":"./tests"
+        }
+    }
+}
