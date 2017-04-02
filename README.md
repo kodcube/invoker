@@ -4,28 +4,7 @@ This can construct & call a method on a passed passed *classname::method* string
 
 This library is great for command bus, event bus or message bus processing, where by just passing a class name and method as a string can be instanciated and executed.
 
-
-**Examples:** 
-"MyClass" is the same as
-
-```PHP
-$class = new MyClass();
-$class();
-```
-
-"MyClass::myMethod" is the same as
-
-```PHP
-$class = new MyClass();
-$class->myMethod();
-```
-or if a static method
-
-```PHP
-MyClass::myMethod();
-```
-
-## Usage
+## Usage & Examples
 
 ### Construct
 
